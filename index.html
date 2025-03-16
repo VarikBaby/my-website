@@ -145,6 +145,56 @@
             transition: transform 0.3s ease;
         }
 
+        /* Стиль для секции связи с менеджерами */
+        #contact-managers {
+            padding: 40px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        #contact-managers h2 {
+            color: #e91e63;
+        }
+
+        #contact-managers form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact-managers form div {
+            margin-bottom: 15px;
+        }
+
+        #contact-managers form label {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        #contact-managers form input,
+        #contact-managers form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contact-managers form button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact-managers form button:hover {
+            background-color: #ffb6c1;
+        }
     </style>
 </head>
 <body>
@@ -174,46 +224,46 @@
 
         <h3>Ремонт и отделка</h3>
         <p>Ремонт и отделка — ключевая часть любой постройки. Мы предлагаем как мелкий, так и капитальный ремонт, а также полную отделку помещений, чтобы ваш дом или офис соответствовал самым высоким стандартам.</p>
-        <img src="https://yandex-images.clstorage.net/iEG501u89/3fbc48c_-vy0/71FUNWTtQORT6vY7gz2G7rd0N61-s4K6uABUsfOK5L_fW0SFohOwPr6NPy57MmGq3hYKhZ40VQY-udKmXm-YUdslkEHViKXwMi-2u7NtpztjRSZo3vZTHp3AoDQWKkQq3P2DsjVFR7jML33ZmsIhX4tim_D6t4OXr_uws1hqvXddYnaG0s4TJ8abNwvQTRZJFQcHyO8kMsh-wlPBBf4yXb-N8uBXxDW5b4-vu5vAos3Yo0-giQdx8c4Jw5HrODz0riMlVIBv4mbFuEY64N7V6gVkVngcx9C4rrJCQPVcgZzvTfFiV7fnuJyNnWgYE2Hc-EEMUlvVECKtuWBDqXu95_0zlITgj4GnRElGW4G_9silJlfZ30cy26xyYXCkDoCt_R4AAvbkBQrsr7_b2yISrxvx74JZduFR7tqDoIp7jQZ9cxe3EMwBtbZbhPswHVbJdwRFyC7VQLtdUeNzlJ3yvX4d8JM1FFX5Lq_u6llDY0-4o9-zyjaRMUxZYoD6Wvx0XJBEJcCfU7eF2DVpEwyXe0c0d-q-lMN6v2IxEDZd0k6_TSGApmSUOJ--PynoUIDf2VGvQftVcyLeOEDxOeuftmxDFbZC_qC0VXnGyiB8l8onNcd7fGVzqN9g8BIn3oN93x_yMIe19nhP3I_K2YEC3PvQPQDpxgPzXikzUVvoH-feMGd0k31TpkaphwlRXvfZ1ubF2Jy10UmPckHxtk6jTxweMZEF1aRq3u0tuCmDcV9ZQc4gq2aB8P4qQ8JLyq6m7sN0htLvIZbmSEeL0--VWvdlFLjtheOovuIwoLT-0S8NjpAy91UWKozcb2j4cUGtOhNOg9onUUG9m1OxOggfBW8R1ZVBL7K1lRn3WyMtNvoV5rSKnERTCd5T0yCVntCvze1h8KdGBcjePC2o-SORDEkQvfHL9SKDvPrB4RoYjRbukkX1Ip-h9ndoB1lA_ufb1IT2Gg1EYFo_8gPTs" alt="Ремонт и отделка">
+        <img src="https://yandex-images.clstorage.net/iEG501u89/3fbc48c_-vy0/71FUNWTtQORT6vY7gz2G7rd0N61-s4K6uABUsfOK5L_fW0SFohOwPr6NPy57MmGq3hYKhZ40VQY-udKmXm-YUdslkEHViKXwMi-2u7NtpztjRSZo3vZTHp3AoDQWKkQq3P2DsjVFR7jML33ZmsIhX4tim_D6t4OXr_uws1hqvXddYnaG0s4TJ8abNwvQTRZJFQcHyO8kMsh-wlPBBf4yXb-N8uBXxDW5b4-vu5vAos3Yo0-giQdx8c4Jw5HrODz0riMlVIBv4mbFuEY64N7V6-V9YdNUGU1WSns2wFuwkZ44g8Zbdg5uBrmd0UjrscHkPx0Db1DdV5qyz7cfnmpfZG03AyVoG9Iq3N7JQq82XNOpXZt5oiU4mRYpzbZjr6qqQ25ykwTBOoGVbhjN7gjr7tv0wv6exJ8xio3BqCBYt6Tdyvk5WntpzG7uSYJSh27qzwwDLXJrj2s7PXT5o-HFpAwG6fFgPON6Qy0ISwUJzdb93npZj6l2iC5w8du7xH9PCQNoKED_c4y-UNk5VkOhFjRAGM4mTg5Lg9TQ9RhMcdaGBjFptA-Ia6ws=w600-h320-p-k-iv1-t1551894845-s-cxdrqpn5qtnqzv19o">
     </section>
 
-    <section id="portfolio">
-        <h2>Наши проекты</h2>
-        <p>Мы гордимся выполнением крупных проектов в сфере жилого и коммерческого строительства. Ознакомьтесь с нашими успешными проектами и убедитесь в нашем профессионализме.</p>
-        <img src="https://avatars.mds.yandex.net/i?id=33308a212c38b8cce84f042fab822618c622e438ad581a29-10464536-images-thumbs&n=13" alt="Наши проекты">
-    </section>
-
-    <section id="contact">
-        <h2>Контакты</h2>
-        <div class="contact-info">
-            <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
-            <p><strong>Email:</strong> info@stroitelstvo.com</p>
-            <p><strong>Адрес:</strong> ул. Строителей, д. 10, офис 5, Москва</p>
-        </div>
-
-        <div class="map">
-            <h3>Найдите нас на карте</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224081.31698998866!2d37.61749534871344!3d55.75581417097306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5aebfcf305d5d%3A0x3f0fa6dfc13b9f59!2z0JrQu9Cw0YDQtdCw0LTQuNC-0LvRj9C10L3Qu9Cw0YDRg9C10L3QuNGINkGAY!5e0!3m2!1sru!2sru!4v1632896324780!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+    <!-- Секция для связи с менеджерами -->
+    <section id="contact-managers">
+        <h2>Связаться с менеджерами</h2>
+        <p>Оставьте свои данные, и наши менеджеры свяжутся с вами в ближайшее время.</p>
+        
+        <form action="https://formspree.io/f/xjvjpjka" method="POST">
+            <div>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div>
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <div>
+                <button type="submit">Отправить сообщение</button>
+            </div>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 Строительство под ключ. Все права защищены.</p>
+        <p>&copy; 2025 Строительная компания</p>
         <div class="footer-links">
-            <a href="#about">О нас</a>
-            <a href="#services">Услуги</a>
-            <a href="#portfolio">Портфолио</a>
-            <a href="#contact">Контакты</a>
-        </div>
-
-        <div class="sitemap">
-            <h3>Карта сайта</h3>
-            <ul>
-                 <li><a href="Контакты.html">О нас</a></li>
-                <li><a href="Карта_сайта.html">Наши услуги</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
         </div>
     </footer>
 </body>
